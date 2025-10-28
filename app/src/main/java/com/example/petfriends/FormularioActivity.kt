@@ -11,11 +11,6 @@ import android.widget.Toast
 import android.util.Patterns
 
 
-/**
- * Pantalla de formulario de adopción.
- * - Recoge nombre, correo, tipo de mascota y aceptación de términos.
- * - Valida campos básicos. Envía datos a ConfirmacionActivity vía Intent.
- */
 class FormularioActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,13 +24,13 @@ class FormularioActivity : AppCompatActivity() {
         val btnEnviar = findViewById<Button>(R.id.btnEnviar)
         val btnSalir = findViewById<Button>(R.id.btnSalir)
 
-        // Botón enviar: validar y enviar datos
+
         btnEnviar.setOnClickListener {
             val nombre = etNombre.text.toString().trim()
             val correo = etCorreo.text.toString().trim()
             val seleccionadoId = radioGroupTipo.checkedRadioButtonId
 
-            // Validaciones
+
             if (nombre.isEmpty()) {
                 etNombre.error = "Ingresa tu nombre completo"
                 etNombre.requestFocus()
@@ -64,7 +59,7 @@ class FormularioActivity : AppCompatActivity() {
                 else -> "No especificado"
             }
 
-            // Pasar datos a ConfirmacionActivity
+
             val intent = Intent(this@FormularioActivity, ConfirmacionActivity::class.java).apply {
                 putExtra("EXTRA_NOMBRE", nombre)
                 putExtra("EXTRA_CORREO", correo)
@@ -73,9 +68,9 @@ class FormularioActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Botón salir: cerrar la app completamente
+
         btnSalir.setOnClickListener {
-            // finishAffinity cierra todas las actividades de la app
+            
             finishAffinity()
         }
     }

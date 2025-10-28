@@ -7,10 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
-/**
- * Pantalla de bienvenida
- * - Muestra título, imagen y botón "Adoptar ahora" que abre FormularioActivity.
- */
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // (Opcional) si deseas cambiar la imagen por código, descomenta:
-        // logo.setImageResource(R.drawable.ic_pet_welcome)
+
     }
 }
