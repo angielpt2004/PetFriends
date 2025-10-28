@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollForm"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_beige"
+    android:padding="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulario de adopción"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/primary_brown"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName"
+            android:fontFamily="sans-serif"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvTipoMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de mascota"
+            android:layout_marginBottom="6dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbPerro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perro 🐕" />
+
+            <RadioButton
+                android:id="@+id/rbGato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gato 🐈"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/chkTerminos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acepto los términos de adopción responsable."
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar solicitud"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:backgroundTint="@color/primary_brown"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:backgroundTint="@color/shade_light"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+</ScrollView>

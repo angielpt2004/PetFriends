@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@color/background_beige">
+
+    <ImageView
+        android:id="@+id/imgHappy"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_pet_happy"
+        android:contentDescription="@string/desc_happy_img"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Gracias!"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/primary_brown"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos mostrados aquí"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnVolverInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver al inicio"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:backgroundTint="@color/accent_pastel" />
+
+</LinearLayout>

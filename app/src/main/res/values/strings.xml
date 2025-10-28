@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PetFriends</string>
+    <string name="desc_welcome_img">Imagen de mascota bienvenida</string>
+    <string name="desc_happy_img">Mascota feliz</string>
+
+    <!-- Textos UI -->
+    <string name="bienvenido">Bienvenido a PetFriends 🐾</string>
+    <string name="intro">Encuentra a tu nuevo amigo — completa la solicitud de adopción.</string>
+</resources>

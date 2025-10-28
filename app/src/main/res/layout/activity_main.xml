@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/background_beige">
+
+    <ImageView
+        android:id="@+id/imgWelcome"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/ic_pet_welcome"
+        android:contentDescription="@string/desc_welcome_img"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a PetFriends 🐾"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/primary_brown"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentra a tu nuevo amigo — completa la solicitud de adopción."
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="20dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnAdoptarNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adoptar ahora"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:backgroundTint="@color/accent_pastel" />
+
+</LinearLayout>
